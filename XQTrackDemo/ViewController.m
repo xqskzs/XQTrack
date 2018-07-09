@@ -42,6 +42,12 @@
 //        va_end(params);
         NSLog(@"+++++++++++++++++用户切换到后台,并开始传跟踪记录到服务器");
     };
+    
+//    [XQTrackHandle printSortAllKeys:[self ivarList] message:@"ivarList"];
+//
+//    [XQTrackHandle printSortAllKeys:[self propertyList] message:@"propertyList"];
+//
+//    [XQTrackHandle printSortAllKeys:[self methodList] message:@"methodList"];
     // Do any additional setup after loading the view, typically from a nib.
 }
 
