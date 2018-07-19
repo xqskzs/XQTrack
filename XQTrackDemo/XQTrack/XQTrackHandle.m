@@ -97,7 +97,7 @@ NSString * const KEY_UDID_INSTEAD = @"com.myapp.udid.test";
     XQTrackModel * md = [[XQTrackModel alloc] init];
     NSString * className = [NSString stringWithUTF8String:object_getClassName(object)];
     md.timeStr = [XQTrackHandle strDate:[NSDate date]];
-    md.message = [NSString stringWithFormat:@"用户 %@ 在 %@ %@ %@",@"小强"/*[XQTrackHandle getPhoneIdentifier]*/,md.timeStr,object.trackMessage ? @"": msg,object.trackMessage ? : className];
+    md.message = [NSString stringWithFormat:@"用户 %@ 在 %@ %@ %@",[XQTrackHandle getPhoneIdentifier],md.timeStr,object.trackMessage ? @"": msg,object.trackMessage ? : className];
     md.className = className;
     [[XQTrackData sharedInstance] queryTrackModel:md];
 }
